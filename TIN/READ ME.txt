@@ -1,0 +1,17 @@
+1. To change the command line argument go to Project - > TIN Properties -> Configuration Properties -> Debugging -> Command Arguments
+
+2. Current the command line arguments are
+top14 NSFNET_100 routing forwarding path distance 0
+That is optimistic connection and distance metric is used
+
+top14 --> default topology file
+NSFNET_100 --> default connection file
+path --> All the connections admitted are stored
+forwarding --> Label forarding base table is stored
+routing --> First and Second shortest disjoint path is stored for every node pair
+p = 0 --> optimistic
+p = 1 --> pessimistic
+hop_or_distance = distance --> distance metric used
+hop_or_distance = hop--> hop count metric used
+
+3. All the input and output files are present inside the TIN Folder
